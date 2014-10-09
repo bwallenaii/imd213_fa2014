@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html" />
+
+    <title>Week 1 Examples</title>
+    <script>
+        
+        var names = [];
+        var nameRatings = [];
+        var addAnotherName = true;
+        var highestRating = 0;
+        var highestIndex = 0;
+        
+        //Collect names from the user
+        while(addAnotherName)
+        {
+            var newName = prompt("Give me a name");
+            names.push(newName);
+            
+            addAnotherName = confirm("Would you Like to add another name?");
+        }
+        
+        //Have the user rate the names
+        for(var i = 0; i < names.length;++i)
+        {
+            var newRating = Number(prompt("Rate the name "+ names[i] +" from 1-10"));
+            nameRatings.push(newRating);
+        }
+        //Find the highest rating and index of that rating
+        for(i = 0; i < nameRatings.length;++i)
+        {
+            if(nameRatings[i] > highestRating)
+            {
+                highestRating = nameRatings[i];
+                highestIndex = i;
+            }
+        }
+        
+    </script>
+</head>
+
+<body>
+
+<script>
+    document.write("You should name your baby " + names[highestIndex] + "!!");
+</script>
+
+
+</body>
+</html>
