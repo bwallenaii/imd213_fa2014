@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html" />
+    
+    <title>Untitled 1</title>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/mootools/1.5.1/mootools-yui-compressed.js"></script>
+    <script src="js/mootools-more-1.5.1.js"></script>
+    <script src="js/lang/en.js"></script>
+    <script src="js/formcheck.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/theme/green/formcheck.css" />
+    <style>
+        #content > div{
+            border-bottom: dashed 3px #3355bb;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        label{
+            display: block;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <nav id="main-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Sign up</a>
+    </nav>
+    <div id="content">
+        <div>
+            <h1>Home</h1>
+            <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit mi, tempor eu justo eget, accumsan porttitor quam. Nullam molestie, sem sed pretium pretium, nulla libero lacinia justo, a tincidunt diam arcu in urna. Vestibulum in arcu sit amet est dapibus cursus eleifend eu odio. Etiam ac dapibus leo, eleifend feugiat tellus. Donec at semper ante, vel laoreet libero. Nullam condimentum neque vel velit pharetra molestie. Proin pretium rutrum pulvinar. Curabitur condimentum aliquam luctus. Vestibulum euismod vulputate nisl eget elementum. Nullam ut sollicitudin eros. Sed vitae lobortis augue, ut volutpat urna.</p>
+            </div>
+            <p>Pellentesque tincidunt placerat sapien in eleifend. Proin eu tortor ultrices sapien eleifend pharetra. Proin faucibus dolor est, a posuere eros tincidunt in. Maecenas dictum placerat diam ut tristique. Mauris sapien quam, egestas ut odio eget, consectetur tincidunt risus. Nam bibendum consequat eros ut imperdiet. Donec nisi nulla, aliquet in nunc hendrerit, consequat sodales orci. Praesent et dictum ex. Vestibulum tempor rutrum quam, eget condimentum lorem vulputate et. Vivamus blandit finibus nisl, ac suscipit lectus auctor et.</p>
+
+            <p>Donec placerat lorem in dolor imperdiet, ac sodales nisl lacinia. Mauris posuere, orci eu condimentum vestibulum, nisl magna laoreet dolor, ut fringilla turpis libero at purus. Maecenas porttitor lobortis aliquam. Duis tincidunt semper suscipit. Duis pellentesque hendrerit nulla, non tempus odio gravida gravida. Maecenas at sapien luctus, rutrum tellus nec, gravida leo. Vestibulum quis dolor vulputate, vestibulum ipsum a, cursus neque. Fusce scelerisque, tellus ac pulvinar sollicitudin, elit dui mattis metus, quis sollicitudin felis nunc eu tortor. Cras eget finibus mauris. Duis ultricies varius libero, convallis sodales ex lacinia vitae. Donec ultricies iaculis nulla eu dignissim. Mauris porta in urna vel interdum. Duis fringilla hendrerit libero sit amet mattis. Suspendisse facilisis augue quis pellentesque lobortis.</p>
+        </div>
+        <div>
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit mi, tempor eu justo eget, accumsan porttitor quam. Nullam molestie, sem sed pretium pretium, nulla libero lacinia justo, a tincidunt diam arcu in urna. Vestibulum in arcu sit amet est dapibus cursus eleifend eu odio. Etiam ac dapibus leo, eleifend feugiat tellus. Donec at semper ante, vel laoreet libero. Nullam condimentum neque vel velit pharetra molestie. Proin pretium rutrum pulvinar. Curabitur condimentum aliquam luctus. Vestibulum euismod vulputate nisl eget elementum. Nullam ut sollicitudin eros. Sed vitae lobortis augue, ut volutpat urna.</p>
+
+            <p>Pellentesque tincidunt placerat sapien in eleifend. Proin eu tortor ultrices sapien eleifend pharetra. Proin faucibus dolor est, a posuere eros tincidunt in. Maecenas dictum placerat diam ut tristique. Mauris sapien quam, egestas ut odio eget, consectetur tincidunt risus. Nam bibendum consequat eros ut imperdiet. Donec nisi nulla, aliquet in nunc hendrerit, consequat sodales orci. Praesent et dictum ex. Vestibulum tempor rutrum quam, eget condimentum lorem vulputate et. Vivamus blandit finibus nisl, ac suscipit lectus auctor et.</p>
+
+            <p>Donec placerat lorem in dolor imperdiet, ac sodales nisl lacinia. Mauris posuere, orci eu condimentum vestibulum, nisl magna laoreet dolor, ut fringilla turpis libero at purus. Maecenas porttitor lobortis aliquam. Duis tincidunt semper suscipit. Duis pellentesque hendrerit nulla, non tempus odio gravida gravida. Maecenas at sapien luctus, rutrum tellus nec, gravida leo. Vestibulum quis dolor vulputate, vestibulum ipsum a, cursus neque. Fusce scelerisque, tellus ac pulvinar sollicitudin, elit dui mattis metus, quis sollicitudin felis nunc eu tortor. Cras eget finibus mauris. Duis ultricies varius libero, convallis sodales ex lacinia vitae. Donec ultricies iaculis nulla eu dignissim. Mauris porta in urna vel interdum. Duis fringilla hendrerit libero sit amet mattis. Suspendisse facilisis augue quis pellentesque lobortis.</p>
+        </div>
+        <div>
+            <h1>Sign up</h1>
+            <form id="new-member" action="process.php" enctype="multipart/form-data" method="post">
+                <label>
+                    First Name: <input type="text" name="first_name" placeholder="Your First Name" class="validate['required','length[2,-1]']" />
+                </label>
+                <label>
+                    Last Name: <input type="text" name="last_name" class="validate['required','length[2,-1]']" />
+                </label>
+                <h3>Allergies:</h3>
+                <label>
+                    <input type="checkbox" name="allergies[]" value="nuts" />Nuts
+                </label>
+                <label>
+                    <input type="checkbox" name="allergies[]" value="pollen" />Pollen
+                </label>
+                <label>
+                    <input type="checkbox" name="allergies[]" value="dairy" />Dairy
+                </label>
+                <label>
+                    <input id="glutenbox" type="checkbox" name="allergies[]" value="gluten" /> Gluten
+                </label>
+                <label>
+                    <h4>Medical History</h4>
+                    <textarea name="history" placeholder="Your relevant medical history" class="validate['required','words[2,-1]']"></textarea>
+                </label>
+                <!-- <input type="submit" value="Sign up!" /> -->
+                <button type="submit">Sign up!</button>
+                <button type="reset">Start Over</button>
+            </form>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit mi, tempor eu justo eget, accumsan porttitor quam. Nullam molestie, sem sed pretium pretium, nulla libero lacinia justo, a tincidunt diam arcu in urna. Vestibulum in arcu sit amet est dapibus cursus eleifend eu odio. Etiam ac dapibus leo, eleifend feugiat tellus. Donec at semper ante, vel laoreet libero. Nullam condimentum neque vel velit pharetra molestie. Proin pretium rutrum pulvinar. Curabitur condimentum aliquam luctus. Vestibulum euismod vulputate nisl eget elementum. Nullam ut sollicitudin eros. Sed vitae lobortis augue, ut volutpat urna.</p>
+
+            <p>Pellentesque tincidunt placerat sapien in eleifend. Proin eu tortor ultrices sapien eleifend pharetra. Proin faucibus dolor est, a posuere eros tincidunt in. Maecenas dictum placerat diam ut tristique. Mauris sapien quam, egestas ut odio eget, consectetur tincidunt risus. Nam bibendum consequat eros ut imperdiet. Donec nisi nulla, aliquet in nunc hendrerit, consequat sodales orci. Praesent et dictum ex. Vestibulum tempor rutrum quam, eget condimentum lorem vulputate et. Vivamus blandit finibus nisl, ac suscipit lectus auctor et.</p>
+
+            <p>Donec placerat lorem in dolor imperdiet, ac sodales nisl lacinia. Mauris posuere, orci eu condimentum vestibulum, nisl magna laoreet dolor, ut fringilla turpis libero at purus. Maecenas porttitor lobortis aliquam. Duis tincidunt semper suscipit. Duis pellentesque hendrerit nulla, non tempus odio gravida gravida. Maecenas at sapien luctus, rutrum tellus nec, gravida leo. Vestibulum quis dolor vulputate, vestibulum ipsum a, cursus neque. Fusce scelerisque, tellus ac pulvinar sollicitudin, elit dui mattis metus, quis sollicitudin felis nunc eu tortor. Cras eget finibus mauris. Duis ultricies varius libero, convallis sodales ex lacinia vitae. Donec ultricies iaculis nulla eu dignissim. Mauris porta in urna vel interdum. Duis fringilla hendrerit libero sit amet mattis. Suspendisse facilisis augue quis pellentesque lobortis.</p>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>
