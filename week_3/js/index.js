@@ -1,3 +1,18 @@
+function checkAllergies(el)
+{
+    var checkBoxes = $$("input[name='allergies[]']");
+    for(var i = 0; i < checkBoxes.length;++i)
+    {
+        if(checkBoxes[i].checked)
+        {
+            return true;
+        }
+    }
+    
+    el.errors.push("Please select an alergy you have. We know you have one.");
+    return false;
+}
+
 document.addEvent("domready", function(){
 
     //NAV START

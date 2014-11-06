@@ -60,7 +60,7 @@
                 </label>
                 <h3>Allergies:</h3>
                 <label>
-                    <input type="checkbox" name="allergies[]" value="nuts" />Nuts
+                    <input type="checkbox" name="allergies[]" value="nuts" class="validate['%checkAllergies']" />Nuts
                 </label>
                 <label>
                     <input type="checkbox" name="allergies[]" value="pollen" />Pollen
@@ -69,7 +69,14 @@
                     <input type="checkbox" name="allergies[]" value="dairy" />Dairy
                 </label>
                 <label>
-                    <input id="glutenbox" type="checkbox" name="allergies[]" value="gluten" /> Gluten
+                    <input id="glutenbox" type="checkbox" name="allergies[]" value="gluten" />Gluten
+                </label>
+                Are you taking allergy medication?
+                <label>
+                    <input type="radio" name="medication" value="yes" class="validate['required']" /> Yes
+                </label>
+                <label>
+                    <input type="radio" name="medication" value="no" /> No
                 </label>
                 <label>
                     <h4>Medical History</h4>
