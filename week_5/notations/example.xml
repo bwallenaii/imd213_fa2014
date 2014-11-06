@@ -1,0 +1,10 @@
+<xml>
+    <item available="2015-06-03">
+        <name>Widget 1</name>
+        <price>10.00</price>
+    </item>
+    <item available="2014-06-03">
+        <name>Widget 2</name>
+        <price>20.00</price>
+    </item>
+</xml>

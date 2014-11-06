@@ -1,0 +1,14 @@
+{
+    "items":[
+        {
+            "name":"Widget 1",
+            "price":10.00,
+            "available":"2015-06-03"
+        },
+        {
+            "name":"Widget 2",
+            "price":10.00,
+            "available":"2014-06-03"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+#products{
+    border: 2px dashed red;
+}
+
+#products .product{
+    display: inline-block;
+    width: 32%;
+}
+
+#products .template{
+    display: none;
+}
+
+h1{
+    color:green;
+    font-size: 2.6em;
+}
