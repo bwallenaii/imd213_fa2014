@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/mootools/1.5.1/mootools-yui-compressed.js"></script>
+        <script>
+            var Animal = new Class({
+	
+        	//Extends: ,
+        	
+        	Implements: [Options, Events],
+        	
+        	options:{
+        	    color:"black",
+        	    diet:"omnivore",
+        	    name:"Andy",
+        	    gender:"female",
+        	    sound:"raar"
+        	},
+        
+        	initialize: function(element, options)
+        	{
+        		this.element = document.id(element);
+        		this.setOptions(options);
+        		
+        		//console.log(this.element, this.options);
+        		this.button = new Element("button", {html:this.options.name});
+        		this.element.grab(this.button); //places it in the Zoo
+        		
+        		this.button.addEvent("click", this.speak.bind(this));
+        	},
+        	
+        	speak: function()
+        	{
+        	    alert(this.options.name + " says, \"" + this.options.sound + ".\"");
+        	}
+        });
+        
+        var Dog = new Class({
+	
+        	Extends: Animal,
+        	
+        	options:{
+        	    sound:"bark"
+        	},
+        	
+        	speak: function(){
+        	    alert("Rrrr. . . ");
+        	    this.parent();
+        	}
+        });
+        
+        var Cat = new Class({
+	
+        	Extends: Animal,
+        	
+        	options:{
+        	    sound:"meow"
+        	}
+        });
+                
+        document.addEvent("domready", function(){
+            var animal1 = new Animal("zoo", {name:"Betty"});
+            new Dog("zoo", {name:"Fido"});
+            new Cat("zoo", {name:"Chester",gender:"male"});
+        }); 
+            
+        </script>
+        
+    </head>
+    <body>
+        <div id="zoo"></div>
+    </body>
+    
+</html>
